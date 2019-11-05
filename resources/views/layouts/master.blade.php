@@ -119,17 +119,16 @@
 @include('layouts.partials.footer')
 
 <!-- jQuery -->
-<script src="vendor/jquery/jquery.min.js"></script>
+<script src="{{asset('js/jquery.min.js')}}"></script>
 
 <!-- Bootstrap Core JavaScript -->
-<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
+<script src="{{asset('js/bootstrap.min.js')}}"></script>
 <!-- Contact Form JavaScript -->
-<script src="js/jqBootstrapValidation.js"></script>
-<script src="js/contact_me.js"></script>
-
+<script src="{{asset('js/jqBootstrapValidation.js')}}"></script>
+<script src="{{asset('js/contact_me.js')}}"></script>
 <!-- Theme JavaScript -->
-<script src="js/clean-blog.min.js"></script>
+<script src="{{asset('js/clean-blog.min.js')}}"></script>
+
 
 <!-- Bootstrap Core CSS -->
 <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
