@@ -12,7 +12,7 @@ use App\Post;
 */
 
 Route::get('/', function () {
-    Post::destroy(2);
+    Post::destroy(3,4,5);
 });
 Route::get('posts', ['as' => 'posts.index', 'uses' =>
     'PostsController@index']);
