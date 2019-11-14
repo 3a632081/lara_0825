@@ -12,8 +12,8 @@ use App\Post;
 */
 
 Route::get('/', function () {
-    $post=Post::where('id','<',10)->orderBy('id','DESC')->get();
-    dd($post);
+    $post=Post::find(1);
+    $post->update(['title'=>'be chaned','content'=>'update']);
 });
 Route::get('posts', ['as' => 'posts.index', 'uses' =>
     'PostsController@index']);
