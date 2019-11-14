@@ -12,8 +12,10 @@ use App\Post;
 */
 
 Route::get('/', function () {
-    Post::create(['title'=>'test.title',
-        'content'=>'test content']);
+    $post=new Post();
+    $post->title='test title';
+    $post->content='test content';
+    $post->save();
 });
 Route::get('posts', ['as' => 'posts.index', 'uses' =>
     'PostsController@index']);
