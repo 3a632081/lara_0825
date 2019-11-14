@@ -12,7 +12,7 @@ use App\Post;
 */
 
 Route::get('/', function () {
-    $post=Post::all();
+    $post=Post::find(1);
     dd($post);
 });
 Route::get('posts', ['as' => 'posts.index', 'uses' =>
