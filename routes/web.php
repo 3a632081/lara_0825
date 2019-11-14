@@ -1,5 +1,5 @@
 <?php
-
+use App\Post;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,7 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    Post::create(['title'=>'test.title',
+        'content'=>'test content']);
 });
 Route::get('posts', ['as' => 'posts.index', 'uses' =>
     'PostsController@index']);
