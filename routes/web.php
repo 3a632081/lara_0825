@@ -12,8 +12,7 @@ use App\Post;
 */
 
 Route::get('/', function () {
-    $post=Post::find(1);
-    $post->delete();
+    Post::destroy(2);
 });
 Route::get('posts', ['as' => 'posts.index', 'uses' =>
     'PostsController@index']);
